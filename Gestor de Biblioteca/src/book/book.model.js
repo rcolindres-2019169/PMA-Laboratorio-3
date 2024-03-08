@@ -10,13 +10,7 @@ const bookSchema = Schema({
         ref: 'category',
         required: [true, 'category is required']
     },
-    items: [{
-        user:{
-            type: Schema.Types.ObjectId,
-            ref: 'user',
-            required: [true, 'user is required']
-        }
-    }]
+    
 }, {
     versionKey: false 
 })

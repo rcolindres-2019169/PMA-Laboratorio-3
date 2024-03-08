@@ -35,7 +35,14 @@ const userSchema = Schema({
         uppercase: true,
         enum: ['ADMIN', 'CLIENT'],
         required: [true, 'role is required']
-    }
+    },
+    item:[{
+        book:{
+            type: Schema.Types.ObjectId,
+            ref: 'book',
+            required: [true, 'user is required']
+        }
+    }]
 }, {
         versionKey: false 
     })

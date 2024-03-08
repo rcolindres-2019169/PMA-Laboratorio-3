@@ -13,4 +13,4 @@ api.delete('/delete/:id', [validateJwt, isAdmin], deleteU)
 api.get('/get',  get)
 api.post('/search', search)
 
-export default api
+export default api  
